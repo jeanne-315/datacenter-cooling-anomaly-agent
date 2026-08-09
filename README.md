@@ -56,7 +56,7 @@ The last gate is the one most projects skip. A dataset can be clean, well-docume
 
 ## What the data actually said
 
-![Overview](figures/fig1_overview.png)
+![Overview](fig1_overview.png)
 
 ### 1. PUE and Total Power are derived fields, not measurements
 
@@ -68,13 +68,13 @@ The independent measurements are: three sub-loop temperatures and flows, overall
 
 ### 2. The missing data is not random — and it coincides with an operational change
 
-![Data gaps](figures/fig3_gaps.png)
+![Data gaps](fig3_gaps.png)
 
 448.5 hours are missing across 303 gaps. But **86% of it falls in May and June**, with a single continuous 63.8-hour gap from May 26–29. Other months are near-complete.
 
 ### 3. A cooling regime change in late April
 
-![Regime change](figures/fig2_regime_change.png)
+![Regime change](/fig2_regime_change.png)
 
 | | Jan–Apr | May–Dec |
 |---|---|---|
@@ -126,7 +126,7 @@ The correlation is real. The causation runs through a third variable.
 
 ## A real anomaly: November 19, 2023
 
-![Nov 19 event](figures/fig4_nov19_event.png)
+![Nov 19 event](fig4_nov19_event.png)
 
 09:40 duration, 01:00–10:30.
 
@@ -179,7 +179,7 @@ These are classified separately from equipment faults, because the response diff
 
 Below **6 MW IT load**, the efficiency ratio is not interpretable:
 
-![6 MW threshold](figures/fig5_threshold.png)
+![6 MW threshold](fig5_threshold.png)
 
 | IT load | Ratio median | Coefficient of variation |
 |---|---|---|
