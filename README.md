@@ -1,8 +1,25 @@
 # Data Center Cooling Anomaly Agent
 
-**An anomaly detection agent for warm-water-cooled data centers — designed to decide when *not* to interrupt an engineer.**
+**A monitoring agent for a new generation of data-center cooling — built to be trusted enough that engineers don't switch it off.**
 
 Status: 🚧 Data exploration and product definition complete. Implementation in progress.
+
+### In one minute
+
+Data centers are shifting to a new cooling design that removes the power-hungry chiller — roughly **40% of a data center's electricity**. It's far more efficient, but it also removes the safety margin that used to quietly absorb cooling problems. On this new design, a cooling fault shows up fast and does real damage.
+
+The catch: the monitoring tools facilities use today raise an alarm for anything that looks odd. On one real facility, a naive setup like that would fire **more than 1,000 alerts a day**. Engineers drown in false alarms, mute the system — and then miss the one alert that was actually real.
+
+This project builds the missing piece: a monitoring agent an engineer actually trusts. Using a full year of real operating data from a live facility (Oak Ridge National Lab's Frontier supercomputer), it:
+
+- **Cuts false alarms by ~63%**, so the alerts that come through are worth reading.
+- **Says "I can't tell" instead of guessing** when the data can't support a call — the honesty that stops engineers from muting it.
+- **Names the type of problem the moment it alerts** — broken equipment, a broken sensor, or a planned shutdown — so the right person is dispatched the first time, not the third.
+- **Keeps working when the cooling setup changes** — the exact situation that quietly breaks most monitoring tools.
+
+**Why this matters for a product role:** every one of those decisions is traceable to something the data actually showed — not a model tuned until the numbers looked nice. This project is really about *product judgment on messy, unlabeled, real-world data.*
+
+The full case study below covers what the data said, what I got wrong, and the reasoning behind every threshold. 👇
 
 ---
 
